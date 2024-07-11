@@ -9,7 +9,7 @@ body, h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
 }
 
-/* Estilos para o header */
+/* header nav container */
 header {
     background-color: #0e2b3b;
     color: #fff;
@@ -23,17 +23,19 @@ header {
     align-items: center;
 }
 
-/* Estilos para o nome */
+/* Estilos para o nome do logo */
 .logo h1 {
     font-size: 2.5rem;
     margin: 0;
+    margin-left: 3rem;
 }
 
 /* Estilos para a navegação */
 nav {
-    flex: 1; /* Ocupará o espaço restante */
     display: flex;
-    justify-content: center; /* Centraliza os itens dentro da navegação */
+    justify-content: right;
+    margin-right: 3.5rem; /* Centraliza os itens dentro da navegação */
+    letter-spacing: 1.5px;
 }
 
 nav ul {
