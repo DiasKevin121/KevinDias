@@ -33,7 +33,7 @@ header {
 /* Estilos para a navegação */
 nav {
     display: flex;
-    justify-content: right;
+   
     margin-right: 3.5rem; /* Centraliza os itens dentro da navegação */
     letter-spacing: 1.5px;
 }
@@ -55,7 +55,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ccc;
+    color: #acacac;
 }
 
 /* Estilos para a seção de Boas-Vindas */
@@ -102,8 +102,9 @@ nav ul li a:hover {
 
 .sobre-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .texto {
@@ -134,46 +135,140 @@ nav ul li a:hover {
 }
 
 /* Estilos para a seção de Projetos */
-.projetos-container {
-    background-color: #e0e0e0;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 50px 20px;
-}
+/* styles.css */
 
-.projetos-container h2 {
-    background-color: #e0e0e0;
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 30px;
+.projetos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Colunas automáticas com largura mínima de 300px */
+    gap: 20px; /* Espaçamento entre os projetos */
+    margin: 0 auto; /* Centralizar o contêiner */
+    max-width: 1200px; /* Definir largura máxima do contêiner */
 }
 
 .projeto {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    background-color: #e0e0e0; /* Cor de fundo do projeto */
     padding: 20px;
+    border-radius: 8px; /* Borda arredondada */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+.projetos {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.projetos h2 {
+    color: #333;
+    font-size: 32px;
     margin-bottom: 20px;
 }
 
 .projeto h3 {
-    font-size: 1.5em;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .projeto p {
-    font-size: 1em;
-    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.ver-projetos {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.ver-projetos:hover {
+    transform: scale(1.1);
+    background-color: #0056b3;
 }
 
 .projeto a {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
 }
 
-.projeto a:hover {
+
+/* Estilos para o botão "voltar ao topo" */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #1d5879;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 30px; /* Ajuste o tamanho do ícone */
+}
+
+.back-to-top:hover {
     background-color: #0056b3;
 }
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Estilo para a seção de habilidades */
+/* Estilo para a seção de habilidades */
+/* Estilo para a seção de habilidades */
+#habilidades {
+    background-color: #0e2b3b;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.habilidades-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distribui as habilidades ao redor */
+}
+
+.habilidade {
+    width: calc(33.33% - 20px); /* Calcula o tamanho para 3 habilidades por linha */
+    margin: 20px 0; /* Ajusta a margem entre as habilidades */
+    text-align: right; /* alinha o texto à direita */
+    box-sizing: border-box; /* Considera padding e borda dentro da largura */
+    background-color: #fff; /* Cor de fundo da caixa */
+    padding: 20px; /* Espaçamento interno da caixa */
+    border-radius: 8px; /* Borda arredondada da caixa */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra da caixa */
+}
+
+.habilidade img {
+    width: 120px; /* ajuste o tamanho da imagem conforme necessário */
+    margin-bottom: 10px;
+}
+
+.habilidade h3 {
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.habilidade p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .habilidade {
+        width: calc(50% - 20px); /* Calcula o tamanho para 2 habilidades por linha em telas menores */
+    }
+}
+
