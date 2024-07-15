@@ -102,9 +102,19 @@ nav ul li a:hover {
 
 .sobre-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
+    flex-direction: column; /* Exibir conteúdo em coluna em telas menores */
+    align-items: center; /* Centralizar itens horizontalmente */
+}
+
+.sobre-container .texto {
+    width: 100%; /* Ocupar toda a largura do contêiner */
+    max-width: 600px; /* Largura máxima para melhor legibilidade */
+    text-align: justify; /* Justificar texto */
+}
+
+.sobre-container .imagem {
+    width: 100%;
+    max-width: 300px; /* Tamanho máximo da imagem */
 }
 
 .texto {
@@ -123,43 +133,36 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
-.imagem {
-    flex: 1;
-    text-align: center;
-}
-
-.imagem img {
-    max-width: 40%;
-    height: auto;
-    border-radius: 15px;
-}
-
 /* Estilos para a seção de Projetos */
 /* styles.css */
+
+/* Estilo para a seção de projetos */
+#projetos {
+    padding: 50px 20px;
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+#projetos h2 {
+    color: #000000;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
 
 .projetos-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Colunas automáticas com largura mínima de 300px */
     gap: 20px; /* Espaçamento entre os projetos */
+    justify-content: center; /* Centraliza as colunas no contêiner */
     margin: 0 auto; /* Centralizar o contêiner */
     max-width: 1200px; /* Definir largura máxima do contêiner */
 }
 
 .projeto {
-    background-color: #e0e0e0; /* Cor de fundo do projeto */
+    background-color: #f4f4f4; /* Cor de fundo do projeto */
     padding: 20px;
     border-radius: 8px; /* Borda arredondada */
-    margin-top: 20px; /* Espaçamento superior */
-}
-
-.projetos {
-    text-align: center; /* Centraliza o conteúdo horizontalmente */
-}
-
-.projetos h2 {
-    color: #333;
-    font-size: 32px;
-    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para as caixas */
+    transition: transform 0.3s ease;
 }
 
 .projeto h3 {
@@ -192,7 +195,6 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-
 /* Estilos para o botão "voltar ao topo" */
 .back-to-top {
     position: fixed;
@@ -224,7 +226,6 @@ nav ul li a:hover {
 
 /* Estilo para a seção de habilidades */
 /* Estilo para a seção de habilidades */
-/* Estilo para a seção de habilidades */
 #habilidades {
     background-color: #0e2b3b;
     color: #fff;
@@ -232,31 +233,35 @@ nav ul li a:hover {
     text-align: center; /* Centraliza o conteúdo */
 }
 
+#habilidades h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
 .habilidades-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; /* Distribui as habilidades ao redor */
+    gap: 20px; /* Espaçamento entre as habilidades */
+    max-width: 1200px; /* Definir largura máxima do contêiner */
+    margin: 0 auto; /* Centralizar o contêiner */
 }
 
 .habilidade {
-    width: calc(33.33% - 20px); /* Calcula o tamanho para 3 habilidades por linha */
-    margin: 20px 0; /* Ajusta a margem entre as habilidades */
-    text-align: right; /* alinha o texto à direita */
-    box-sizing: border-box; /* Considera padding e borda dentro da largura */
     background-color: #fff; /* Cor de fundo da caixa */
+    color: #333;
     padding: 20px; /* Espaçamento interno da caixa */
     border-radius: 8px; /* Borda arredondada da caixa */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra da caixa */
+    text-align: center; /* Centraliza o conteúdo dentro da caixa */
+    box-sizing: border-box; /* Considera padding e borda dentro da largura */
+    flex: 1 1 calc(33.33% - 20px); /* Calcula o tamanho para 3 habilidades por linha */
+    margin: 10px; /* Margem entre as habilidades */
+    max-width: 300px; /* Define a largura máxima das caixas */
 }
 
 .habilidade img {
-    width: 120px; /* ajuste o tamanho da imagem conforme necessário */
-    margin-bottom: 10px;
-}
-
-.habilidade h3 {
-    color: #000000;
-    font-size: 24px;
+    width: 100px; /* ajuste o tamanho da imagem conforme necessário */
     margin-bottom: 10px;
 }
 
@@ -268,7 +273,70 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
     .habilidade {
-        width: calc(50% - 20px); /* Calcula o tamanho para 2 habilidades por linha em telas menores */
+        flex: 1 1 calc(50% - 20px); /* Calcula o tamanho para 2 habilidades por linha em telas menores */
     }
+}
+
+@media (max-width: 480px) {
+    .habilidade {
+        flex: 1 1 100%; /* Calcula o tamanho para 1 habilidade por linha em telas muito pequenas */
+    }
+}
+
+/* Estilos para telas menores, como tablets e smartphones */
+@media (max-width: 768px) {
+    /* Exemplo de ajuste de largura para um contêiner */
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Exemplo de ajuste de fonte para melhor legibilidade em dispositivos menores */
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Exemplo básico de media query para ajustar o menu em telas menores */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column; /* Exibir itens verticalmente */
+    }
+
+    .nav-container nav {
+        margin-top: 10px; /* Ajustar espaçamento entre logo e menu */
+    }
+
+    .nav-container ul {
+        text-align: center; /* Centralizar itens do menu */
+    }
+
+    .nav-container ul li {
+        margin-bottom: 10px; /* Espaçamento entre itens do menu */
+    }
+}
+
+@media (min-width: 768px) {
+    .sobre-container {
+        flex-direction: row; /* Exibir conteúdo lado a lado em telas maiores */
+        justify-content: space-between; /* Distribuir itens ao longo do espaço disponível */
+    }
+
+    .sobre-container .texto {
+        width: 50%; /* Ajustar largura do texto em telas maiores */
+    }
+
+    .sobre-container .imagem {
+        width: 20%; /* Reduz a largura da imagem em telas maiores */
+        max-width: none; /* Remove o tamanho máximo para telas maiores */
+        margin-right: 200px; /* Adiciona uma margem direita para separar o texto */
+        margin-left: 0; /* Reseta a margem esquerda */
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Para evitar espaços em branco sob imagens em alguns navegadores */
 }
 
