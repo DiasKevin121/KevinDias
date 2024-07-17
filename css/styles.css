@@ -26,6 +26,9 @@ header {
 
 /* Estilos para o nome do logo */
 .logo h1 {
+    background: linear-gradient(90deg, #00fff2, #0384fc, #a7e6eb); /* Cria um plano de fundo com gradiente linear de 90 graus, indo do azul-ciano (#00fff2) para o azul mais escuro (#0384fc) e depois para o azul-ciano novamente (#a7e6eb) */
+    -webkit-background-clip: text; /* Aplica o efeito de recorte de fundo especificamente ao texto, permitindo que o gradiente seja visível através do texto */
+    color: transparent; /* Torna o texto transparente, o que permite que o gradiente linear seja visível através dele */
     font-family: Georgia;
     font-size: 2.5rem; /* Tamanho da fonte */
     margin: 0; /* Remove as margens padrão */
@@ -105,7 +108,7 @@ nav ul li a:hover {
 #sobre {
     padding: 2rem; /* Espaçamento interno */
     background-color: #0e2b3b; /* Cor de fundo */
-    color: white; /* Cor do texto */
+    color: rgb(255, 255, 255); /* Cor do texto */
 }
 
 /* Estilos para o contêiner da seção Sobre Mim */
@@ -140,10 +143,13 @@ nav ul li a:hover {
 
 /* Estilos para os títulos dentro do texto */
 .texto h2 {
+    background: linear-gradient(90deg, #00fff2, #0384fc, #a7e6eb); /* Cria um plano de fundo com gradiente linear de 90 graus, indo do azul-ciano (#00fff2) para o azul mais escuro (#0384fc) e depois para o azul-ciano novamente (#a7e6eb) */
+    -webkit-background-clip: text; /* Aplica o efeito de recorte de fundo especificamente ao texto, permitindo que o gradiente seja visível através do texto */
+    color: transparent; /* Torna o texto transparente, o que permite que o gradiente linear seja visível através dele */
     font-family: Georgia;
     font-size: 2rem; /* Tamanho da fonte */
     margin-bottom: 2rem; /* Margem inferior */
-    margin-top: -10rem;
+    margin-top: 1rem;
 }
 
 /* Estilos para os parágrafos dentro do texto */
@@ -261,6 +267,9 @@ nav ul li a:hover {
 
 /* Estilos para o título da seção de Habilidades */
 #habilidades h2 {
+    background: linear-gradient(90deg, #00fff2, #0384fc, #a7e6eb); /* Cria um plano de fundo com gradiente linear de 90 graus, indo do azul-ciano (#00fff2) para o azul mais escuro (#0384fc) e depois para o azul-ciano novamente (#a7e6eb) */
+    -webkit-background-clip: text; /* Aplica o efeito de recorte de fundo especificamente ao texto, permitindo que o gradiente seja visível através do texto */
+    color: transparent; /* Torna o texto transparente, o que permite que o gradiente linear seja visível através dele */
     font-family: Georgia;
     margin-bottom: 40px; /* Margem inferior */
     font-size: 32px; /* Tamanho da fonte */
