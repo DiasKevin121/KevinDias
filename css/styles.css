@@ -26,6 +26,7 @@ header {
 
 /* Estilos para o nome do logo */
 .logo h1 {
+    font-family: Georgia;
     font-size: 2.5rem; /* Tamanho da fonte */
     margin: 0; /* Remove as margens padrão */
     margin-left: 3rem; /* Margem à esquerda */
@@ -77,6 +78,7 @@ nav ul li a:hover {
 
 /* Estilos para o título da seção de Boas-Vindas */
 .boas-vindas-container h2 {
+    font-family: Georgia;
     font-size: 2.5rem; /* Tamanho da fonte */
     margin-bottom: 1rem; /* Margem inferior */
 }
@@ -126,7 +128,7 @@ nav ul li a:hover {
 .sobre-container .imagem {
     flex: 0 0 250px; /* Tamanho fixo para a imagem */
     max-width: 250px; /* Largura máxima da imagem */
-    margin-right: 20rem; /* Margem à direita */
+    margin-right: 10rem; /* Margem à direita */
 }
 
 /* Estilos para a imagem na seção Sobre Mim */
@@ -138,8 +140,10 @@ nav ul li a:hover {
 
 /* Estilos para os títulos dentro do texto */
 .texto h2 {
+    font-family: Georgia;
     font-size: 2rem; /* Tamanho da fonte */
-    margin-bottom: 1rem; /* Margem inferior */
+    margin-bottom: 2rem; /* Margem inferior */
+    margin-top: -10rem;
 }
 
 /* Estilos para os parágrafos dentro do texto */
@@ -156,6 +160,7 @@ nav ul li a:hover {
 
 /* Estilos para o título da seção de Projetos */
 #projetos h2 {
+    font-family: Georgia;
     color: #000000; /* Cor do texto */
     font-size: 32px; /* Tamanho da fonte */
     margin-bottom: 40px; /* Margem inferior */
@@ -173,7 +178,7 @@ nav ul li a:hover {
 
 /* Estilos para cada projeto individual */
 .projeto {
-    background-color: #f4f4f4; /* Cor de fundo do projeto */
+    background-color: #c7c7c7; /* Cor de fundo do projeto */
     padding: 20px; /* Espaçamento interno */
     border-radius: 8px; /* Borda arredondada */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
@@ -256,6 +261,7 @@ nav ul li a:hover {
 
 /* Estilos para o título da seção de Habilidades */
 #habilidades h2 {
+    font-family: Georgia;
     margin-bottom: 40px; /* Margem inferior */
     font-size: 32px; /* Tamanho da fonte */
 }
