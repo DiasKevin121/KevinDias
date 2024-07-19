@@ -66,6 +66,88 @@ nav ul li a:hover {
     color: #acacac; /* Cor do texto ao passar o mouse */
 }
 
+/* Media queries para responsividade */
+
+/* Telas pequenas (smartphones) */
+@media (max-width: 600px) {
+    /* Ajusta o header */
+    header {
+        padding: 0.5rem;
+    }
+    
+    /* Ajusta o container de navegação */
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Ajusta o logo */
+    .logo h1 {
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+
+    /* Ajusta a navegação */
+    nav {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+}
+
+/* Telas médias (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    /* Ajusta o header */
+    header {
+        padding: 1rem;
+    }
+
+    /* Ajusta o logo */
+    .logo h1 {
+        font-size: 2.2rem;
+        margin-left: 2rem;
+    }
+
+    /* Ajusta a navegação */
+    nav {
+        width: auto;
+        margin-right: 2rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    nav ul li {
+        margin-left: 1rem;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
+    }
+}
+
+/* Telas grandes (computadores e monitores) */
+@media (min-width: 1025px) {
+    /* Mantém os estilos originais */
+}
+
 /* Estilos para a seção de Boas-Vindas */
 #boas-vindas {
     padding: 3rem 2rem; /* Espaçamento interno */
@@ -141,6 +223,62 @@ nav ul li a:hover {
     border-radius: 50px; /* Borda arredondada */
 }
 
+/* Media queries para responsividade */
+
+/* Telas pequenas (smartphones) */
+@media (max-width: 600px) {
+    .sobre-container {
+        flex-direction: column; /* Coluna para telas pequenas */
+        align-items: center; /* Centralizar itens */
+    }
+
+    .sobre-container .texto {
+        margin-bottom: 1rem; /* Reduzir o espaçamento entre o texto e a imagem */
+        max-width: 100%; /* Largura máxima do texto */
+    }
+
+    .sobre-container .imagem {
+        max-width: 200px; /* Reduzir a largura da imagem em telas pequenas */
+    }
+}
+
+/* Telas médias (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .sobre-container {
+        flex-direction: row; /* Linha para telas médias */
+        align-items: flex-start; /* Alinhar itens no início */
+        justify-content: center; /* Centraliza os itens */
+        text-align: left; /* Alinha o texto à esquerda */
+    }
+
+    .sobre-container .texto {
+        margin-right: 2rem; /* Espaçamento entre o texto e a imagem */
+        max-width: 50%; /* Limitar a largura do texto */
+    }
+
+    .sobre-container .imagem {
+        max-width: 250px; /* Largura máxima da imagem */
+    }
+}
+
+/* Telas grandes (computadores e monitores) */
+@media (min-width: 1025px) {
+    .sobre-container {
+        flex-direction: row; /* Linha para telas grandes */
+        align-items: center; /* Centralizar itens verticalmente */
+        justify-content: space-between; /* Espaçar itens igualmente */
+    }
+
+    .sobre-container .texto {
+        margin-right: 3rem; /* Espaçamento entre o texto e a imagem */
+        max-width: 50%; /* Limitar a largura do texto */
+    }
+
+    .sobre-container .imagem {
+        max-width: 250px; /* Largura máxima da imagem */
+    }
+}
+
 /* Estilos para os títulos dentro do texto */
 .texto h2 {
     background: linear-gradient(90deg, #00fff2, #0384fc, #a7e6eb); /* Cria um plano de fundo com gradiente linear de 90 graus, indo do azul-ciano (#00fff2) para o azul mais escuro (#0384fc) e depois para o azul-ciano novamente (#a7e6eb) */
@@ -174,33 +312,40 @@ nav ul li a:hover {
 
 /* Estilos para o contêiner dos projetos */
 .projetos-container {
-    display: grid; /* Exibe os itens em grid */
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Colunas automáticas com largura mínima de 300px */
     gap: 20px; /* Espaçamento entre os projetos */
-    justify-content: center; /* Centraliza os itens no contêiner */
-    margin: 0 auto; /* Centraliza o contêiner */
-    max-width: 1200px; /* Largura máxima do contêiner */
+    justify-content: center; /* Centraliza as colunas no contêiner */
+    margin: 0 auto; /* Centralizar o contêiner */
+    max-width: 1200px; /* Definir largura máxima do contêiner */
 }
 
 /* Estilos para cada projeto individual */
 .projeto {
-    background-color: #c7c7c7; /* Cor de fundo do projeto */
-    padding: 20px; /* Espaçamento interno */
+    background-color: #0e2b3b; /* Cor de fundo do projeto */
+    color: #fff;
+    padding: 20px;
     border-radius: 8px; /* Borda arredondada */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
-    transition: transform 0.3s ease; /* Transição suave */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para as caixas */
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Mantenha o conteúdo em uma coluna */
+    justify-content: space-between; /* Distribua o espaço de forma igual entre os elementos */
 }
 
 /* Estilos para o título dos projetos */
 .projeto h3 {
-    font-size: 20px; /* Tamanho da fonte */
-    margin-bottom: 10px; /* Margem inferior */
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center; /* Centralize o título */
 }
 
 /* Estilos para os parágrafos dos projetos */
 .projeto p {
-    font-size: 16px; /* Tamanho da fonte */
-    margin-bottom: 15px; /* Margem inferior */
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: justify; /* Justifique o texto para um alinhamento uniforme */
+    flex-grow: 1; /* Permite que o parágrafo ocupe o espaço restante */
 }
 
 /* Estilos para o botão "Ver Projeto" */
@@ -213,6 +358,7 @@ nav ul li a:hover {
     cursor: pointer; /* Cursor ao passar o mouse */
     transition: transform 0.3s ease, background-color 0.3s ease; /* Transições suaves */
     font-size: 16px; /* Tamanho da fonte */
+    margin-top: 15px; /* Empurra o botão para a parte inferior */
 }
 
 /* Estilos para o hover no botão "Ver Projeto" */
@@ -224,6 +370,13 @@ nav ul li a:hover {
 /* Estilos para os links nos projetos */
 .projeto a {
     text-decoration: none; /* Remove o sublinhado */
+}
+
+.projeto img {
+    width: 100%; /* Largura total */
+    height: auto; /* Altura automática */
+    border-radius: 0px; /* Borda arredondada */
+    margin-top: 10px;
 }
 
 /* Estilos para o botão "voltar ao topo" */
