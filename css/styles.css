@@ -6,75 +6,80 @@
 }
 
 /* Define o estilo do corpo e dos títulos usando a fonte Roboto */
-body, h1, h2, h3, h4, h5, h6 {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Roboto', sans-serif;
 }
 
 /* Estilos para o cabeçalho */
 header {
-    background-color: #0e2b3b; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
-    padding: 1rem; /* Espaçamento interno */
+    background-color: #012444;
+    color: #fff;
+    padding: 1rem;
 }
 
 /* Estilos para o contêiner da navegação */
 .nav-container {
-    display: flex; /* Exibe os itens em linha */
-    justify-content: space-between; /* Distribui os itens igualmente ao longo do espaço disponível */
-    align-items: center; /* Centraliza verticalmente os itens */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Estilos para o nome do logo */
 .logo h1 {
-    background: linear-gradient(90deg, #00fff2, #0384fc, #a7e6eb); /* Cria um plano de fundo com gradiente linear de 90 graus, indo do azul-ciano (#00fff2) para o azul mais escuro (#0384fc) e depois para o azul-ciano novamente (#a7e6eb) */
-    -webkit-background-clip: text; /* Aplica o efeito de recorte de fundo especificamente ao texto, permitindo que o gradiente seja visível através do texto */
-    color: transparent; /* Torna o texto transparente, o que permite que o gradiente linear seja visível através dele */
+    color: #fffb00;
     font-family: Georgia;
-    font-size: 2.5rem; /* Tamanho da fonte */
-    margin: 0; /* Remove as margens padrão */
-    margin-left: 3rem; /* Margem à esquerda */
+    font-size: 2.5rem;
+    margin: 0;
+    margin-left: 3rem;
 }
 
 /* Estilos para a navegação */
 nav {
-    display: flex; /* Exibe os itens em linha */
-    margin-right: 3.5rem; /* Margem à direita */
-    letter-spacing: 1.5px; /* Espaçamento entre as letras */
+    display: flex;
+    margin-right: 3.5rem;
+    letter-spacing: 1.5px;
 }
 
 /* Estilos para a lista não ordenada dentro da navegação */
 nav ul {
-    list-style: none; /* Remove os marcadores de lista */
-    display: flex; /* Exibe os itens em linha */
+    list-style: none;
+    display: flex;
 }
 
 /* Estilos para os itens da lista na navegação */
 nav ul li {
-    margin-left: 1.5rem; /* Margem à esquerda entre os itens */
+    margin-left: 1.5rem;
 }
 
 /* Estilos para os links na navegação */
 nav ul li a {
-    color: #fff; /* Cor do texto */
-    text-decoration: none; /* Remove o sublinhado do link */
-    font-size: 1.2rem; /* Tamanho da fonte */
-    transition: color 0.3s; /* Transição suave da cor */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
 }
 
 /* Estilos para hover nos links da navegação */
 nav ul li a:hover {
-    color: #acacac; /* Cor do texto ao passar o mouse */
+    color: #acacac;
 }
 
-/* Media queries para responsividade */
+/* Media para responsividade */
 
 /* Telas pequenas (smartphones) */
 @media (max-width: 600px) {
+
     /* Ajusta o header */
     header {
         padding: 0.5rem;
     }
-    
+
     /* Ajusta o container de navegação */
     .nav-container {
         flex-direction: column;
@@ -112,6 +117,7 @@ nav ul li a:hover {
 
 /* Telas médias (tablets) */
 @media (min-width: 601px) and (max-width: 1024px) {
+
     /* Ajusta o header */
     header {
         padding: 1rem;
@@ -150,314 +156,314 @@ nav ul li a:hover {
 
 /* Estilos para a seção de Boas-Vindas */
 #boas-vindas {
-    padding: 3rem 2rem; /* Espaçamento interno */
-    background-color: #e0e0e0; /* Cor de fundo */
-    text-align: center; /* Centraliza o texto */
+    padding: 3rem 2rem;
+    background-color: #e0e0e0;
+    text-align: center;
 }
 
 /* Estilos para o contêiner de boas-vindas */
 .boas-vindas-container {
-    text-align: center; /* Centraliza o texto */
-    padding: 50px 20px; /* Espaçamento interno */
+    text-align: center;
+    padding: 50px 20px;
 }
 
 /* Estilos para o título da seção de Boas-Vindas */
 .boas-vindas-container h2 {
     font-family: Georgia;
-    font-size: 2.5rem; /* Tamanho da fonte */
-    margin-bottom: 1rem; /* Margem inferior */
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 /* Estilos para o texto na seção de Boas-Vindas */
 .boas-vindas-container p {
-    font-size: 1.2rem; /* Tamanho da fonte */
-    line-height: 1.6; /* Altura da linha */
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
 /* Estilos para a imagem na seção de Boas-Vindas */
 .imagem-boas-vindas {
-    margin-top: 20px; /* Margem superior */
+    margin-top: 20px;
 }
 
 /* Estilos para a imagem na seção de Boas-Vindas */
 .imagem-boas-vindas img {
-    max-width: 100%; /* Largura máxima */
-    height: auto; /* Altura automática */
-    border-radius: 50%; /* Borda arredondada */
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
 }
 
 /* Estilos para a seção Sobre Mim */
 #sobre {
-    padding: 2rem; /* Espaçamento interno */
-    background-color: #0e2b3b; /* Cor de fundo */
-    color: rgb(255, 255, 255); /* Cor do texto */
+    padding: 2rem;
+    background-color: #0e2b3b;
+    color: rgb(255, 255, 255);
 }
 
 /* Estilos para o contêiner da seção Sobre Mim */
 .sobre-container {
-    display: flex; /* Exibe os itens em linha */
-    flex-direction: row; /* Direção dos itens */
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: space-between; /* Distribui os itens igualmente */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Estilos para o texto na seção Sobre Mim */
 .sobre-container .texto {
-    flex: 1; /* Permite que o texto ocupe a maior parte do espaço disponível */
-    margin-right: 2rem; /* Margem à direita */
-    max-width: 600px; /* Largura máxima */
-    margin-left: 3rem; /* Margem à esquerda */
+    flex: 1;
+    margin-right: 2rem;
+    max-width: 600px;
+    margin-left: 3rem;
 }
 
 /* Estilos para a imagem na seção Sobre Mim */
 .sobre-container .imagem {
-    flex: 0 0 250px; /* Tamanho fixo para a imagem */
-    max-width: 250px; /* Largura máxima da imagem */
-    margin-right: 10rem; /* Margem à direita */
+    flex: 0 0 250px;
+    max-width: 250px;
+    margin-right: 10rem;
 }
 
 /* Estilos para a imagem na seção Sobre Mim */
 .sobre-container .imagem img {
-    width: 100%; /* Largura total */
-    height: auto; /* Altura automática */
-    border-radius: 50px; /* Borda arredondada */
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
 }
 
-/* Media queries para responsividade */
+/* Media para responsividade */
 
 /* Telas pequenas (smartphones) */
 @media (max-width: 600px) {
     .sobre-container {
-        flex-direction: column; /* Coluna para telas pequenas */
-        align-items: center; /* Centralizar itens */
+        flex-direction: column;
+        align-items: center;
     }
 
     .sobre-container .texto {
-        margin-bottom: 1rem; /* Reduzir o espaçamento entre o texto e a imagem */
-        max-width: 100%; /* Largura máxima do texto */
+        margin-bottom: 1rem;
+        max-width: 100%;
     }
 
     .sobre-container .imagem {
-        max-width: 200px; /* Reduzir a largura da imagem em telas pequenas */
+        max-width: 200px;
     }
 }
 
 /* Telas médias (tablets) */
 @media (min-width: 601px) and (max-width: 1024px) {
     .sobre-container {
-        flex-direction: row; /* Linha para telas médias */
-        align-items: flex-start; /* Alinhar itens no início */
-        justify-content: center; /* Centraliza os itens */
-        text-align: left; /* Alinha o texto à esquerda */
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: left;
     }
 
     .sobre-container .texto {
-        margin-right: 2rem; /* Espaçamento entre o texto e a imagem */
-        max-width: 50%; /* Limitar a largura do texto */
+        margin-right: 2rem;
+        max-width: 50%;
     }
 
     .sobre-container .imagem {
-        max-width: 250px; /* Largura máxima da imagem */
+        max-width: 250px;
     }
 }
 
 /* Telas grandes (computadores e monitores) */
 @media (min-width: 1025px) {
     .sobre-container {
-        flex-direction: row; /* Linha para telas grandes */
-        align-items: center; /* Centralizar itens verticalmente */
-        justify-content: space-between; /* Espaçar itens igualmente */
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .sobre-container .texto {
-        margin-right: 3rem; /* Espaçamento entre o texto e a imagem */
-        max-width: 50%; /* Limitar a largura do texto */
+        margin-right: 3rem;
+        max-width: 50%;
+
+        .sobre-container .imagem {
+            max-width: 250px;
+        }
     }
 
-    .sobre-container .imagem {
-        max-width: 250px; /* Largura máxima da imagem */
+    /* Estilos para os títulos dentro do texto */
+    .texto h2 {
+        background: linear-gradient(90deg, #00fff2, #0384fc, #a7e6eb);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-family: Georgia;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
     }
-}
 
-/* Estilos para os títulos dentro do texto */
-.texto h2 {
-    background: linear-gradient(90deg, #00fff2, #0384fc, #a7e6eb); /* Cria um plano de fundo com gradiente linear de 90 graus, indo do azul-ciano (#00fff2) para o azul mais escuro (#0384fc) e depois para o azul-ciano novamente (#a7e6eb) */
-    -webkit-background-clip: text; /* Aplica o efeito de recorte de fundo especificamente ao texto, permitindo que o gradiente seja visível através do texto */
-    color: transparent; /* Torna o texto transparente, o que permite que o gradiente linear seja visível através dele */
-    font-family: Georgia;
-    font-size: 2rem; /* Tamanho da fonte */
-    margin-bottom: 2rem; /* Margem inferior */
-    margin-top: 1rem;
-}
+    /* Estilos para os parágrafos dentro do texto */
+    .texto p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
 
-/* Estilos para os parágrafos dentro do texto */
-.texto p {
-    font-size: 1.1rem; /* Tamanho da fonte */
-    line-height: 1.6; /* Altura da linha */
-}
+    /* Estilos para a seção de Projetos */
+    #projetos {
+        padding: 50px 20px;
+        text-align: center;
+    }
 
-/* Estilos para a seção de Projetos */
-#projetos {
-    padding: 50px 20px; /* Espaçamento interno */
-    text-align: center; /* Centraliza o conteúdo */
-}
+    /* Estilos para o título da seção de Projetos */
+    #projetos h2 {
+        font-family: Georgia;
+        color: #000000;
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
 
-/* Estilos para o título da seção de Projetos */
-#projetos h2 {
-    font-family: Georgia;
-    color: #000000; /* Cor do texto */
-    font-size: 32px; /* Tamanho da fonte */
-    margin-bottom: 40px; /* Margem inferior */
-}
+    /* Estilos para o contêiner dos projetos */
+    .projetos-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
 
-/* Estilos para o contêiner dos projetos */
-.projetos-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Colunas automáticas com largura mínima de 300px */
-    gap: 20px; /* Espaçamento entre os projetos */
-    justify-content: center; /* Centraliza as colunas no contêiner */
-    margin: 0 auto; /* Centralizar o contêiner */
-    max-width: 1200px; /* Definir largura máxima do contêiner */
-}
+    /* Estilos para cada projeto individual */
+    .projeto {
+        background-color: #0e2b3b;
+        color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
-/* Estilos para cada projeto individual */
-.projeto {
-    background-color: #0e2b3b; /* Cor de fundo do projeto */
-    color: #fff;
-    padding: 20px;
-    border-radius: 8px; /* Borda arredondada */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para as caixas */
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column; /* Mantenha o conteúdo em uma coluna */
-    justify-content: space-between; /* Distribua o espaço de forma igual entre os elementos */
-}
+    /* Estilos para o título dos projetos */
+    .projeto h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
 
-/* Estilos para o título dos projetos */
-.projeto h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    text-align: center; /* Centralize o título */
-}
+    /* Estilos para os parágrafos dos projetos */
+    .projeto p {
+        font-size: 16px;
+        margin-bottom: 15px;
+        text-align: justify;
+        flex-grow: 1;
+    }
 
-/* Estilos para os parágrafos dos projetos */
-.projeto p {
-    font-size: 16px;
-    margin-bottom: 15px;
-    text-align: justify; /* Justifique o texto para um alinhamento uniforme */
-    flex-grow: 1; /* Permite que o parágrafo ocupe o espaço restante */
-}
+    /* Estilos para o botão "Ver Projeto" */
+    .ver-projetos {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        font-size: 16px;
+        margin-top: 15px;
+    }
 
-/* Estilos para o botão "Ver Projeto" */
-.ver-projetos {
-    background-color: #007bff; /* Cor de fundo */
-    color: white; /* Cor do texto */
-    padding: 10px 20px; /* Espaçamento interno */
-    border: none; /* Sem borda */
-    border-radius: 5px; /* Borda arredondada */
-    cursor: pointer; /* Cursor ao passar o mouse */
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Transições suaves */
-    font-size: 16px; /* Tamanho da fonte */
-    margin-top: 15px; /* Empurra o botão para a parte inferior */
-}
+    /* Estilos para o hover no botão "Ver Projeto" */
+    .ver-projetos:hover {
+        transform: scale(1.1);
+        background-color: #0056b3;
+    }
 
-/* Estilos para o hover no botão "Ver Projeto" */
-.ver-projetos:hover {
-    transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
-    background-color: #0056b3; /* Cor de fundo no hover */
-}
+    /* Estilos para os links nos projetos */
+    .projeto a {
+        text-decoration: none;
+    }
 
-/* Estilos para os links nos projetos */
-.projeto a {
-    text-decoration: none; /* Remove o sublinhado */
-}
+    .projeto img {
+        width: 100%;
+        height: auto;
+        border-radius: 0px;
+        margin-top: 10px;
+    }
 
-.projeto img {
-    width: 100%; /* Largura total */
-    height: auto; /* Altura automática */
-    border-radius: 0px; /* Borda arredondada */
-    margin-top: 10px;
-}
+    /* Estilos para o botão "voltar ao topo" */
+    .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        background-color: #1d5879;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: opacity 0.3s ease;
+        opacity: 0;
+        visibility: hidden;
+        font-size: 30px;
+    }
 
-/* Estilos para o botão "voltar ao topo" */
-.back-to-top {
-    position: fixed; /* Posição fixa */
-    bottom: 20px; /* Distância do fundo */
-    right: 20px; /* Distância da direita */
-    width: 50px; /* Largura */
-    height: 50px; /* Altura */
-    background-color: #1d5879; /* Cor de fundo */
-    color: white; /* Cor do texto */
-    border-radius: 50%; /* Borda arredondada */
-    display: flex; /* Exibe os itens em linha */
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    text-decoration: none; /* Remove o sublinhado */
-    transition: opacity 0.3s ease; /* Transição suave */
-    opacity: 0; /* Opacidade inicial */
-    visibility: hidden; /* Visibilidade inicial */
-    font-size: 30px; /* Tamanho da fonte */
-}
+    /* Estilos para o hover no botão "voltar ao topo" */
+    .back-to-top:hover {
+        background-color: #0056b3;
+    }
 
-/* Estilos para o hover no botão "voltar ao topo" */
-.back-to-top:hover {
-    background-color: #0056b3; /* Cor de fundo no hover */
-}
+    /* Estilos para mostrar o botão "voltar ao topo" */
+    .back-to-top.show {
+        opacity: 1;
+        visibility: visible;
+    }
 
-/* Estilos para mostrar o botão "voltar ao topo" */
-.back-to-top.show {
-    opacity: 1; /* Opacidade ao mostrar */
-    visibility: visible; /* Visibilidade ao mostrar */
-}
+    /* Estilos para a seção de Habilidades */
+    #habilidades {
+        background-color: #0e2b3b;
+        color: #fff;
+        padding: 50px 0;
+        text-align: center;
+    }
 
-/* Estilos para a seção de Habilidades */
-#habilidades {
-    background-color: #0e2b3b; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
-    padding: 50px 0; /* Espaçamento interno */
-    text-align: center; /* Centraliza o conteúdo */
-}
+    /* Estilos para o título da seção de Habilidades */
+    #habilidades h2 {
+        background: linear-gradient(90deg, #00fff2, #0384fc, #a7e6eb);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-family: Georgia;
+        margin-bottom: 40px;
+        font-size: 32px;
+    }
 
-/* Estilos para o título da seção de Habilidades */
-#habilidades h2 {
-    background: linear-gradient(90deg, #00fff2, #0384fc, #a7e6eb); /* Cria um plano de fundo com gradiente linear de 90 graus, indo do azul-ciano (#00fff2) para o azul mais escuro (#0384fc) e depois para o azul-ciano novamente (#a7e6eb) */
-    -webkit-background-clip: text; /* Aplica o efeito de recorte de fundo especificamente ao texto, permitindo que o gradiente seja visível através do texto */
-    color: transparent; /* Torna o texto transparente, o que permite que o gradiente linear seja visível através dele */
-    font-family: Georgia;
-    margin-bottom: 40px; /* Margem inferior */
-    font-size: 32px; /* Tamanho da fonte */
-}
+    /* Estilos para o contêiner das habilidades */
+    .habilidades-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 
-/* Estilos para o contêiner das habilidades */
-.habilidades-container {
-    display: flex; /* Exibe os itens em linha */
-    flex-wrap: wrap; /* Quebra linha conforme necessário */
-    justify-content: space-around; /* Distribui as habilidades ao redor */
-    gap: 20px; /* Espaçamento entre as habilidades */
-    max-width: 1200px; /* Largura máxima do contêiner */
-    margin: 0 auto; /* Centraliza o contêiner */
-}
+    /* Estilos para as imagens das habilidades */
+    .habilidade img {
+        width: 200px;
+        margin-bottom: 10px;
+    }
 
-/* Estilos para as imagens das habilidades */
-.habilidade img {
-    width: 200px; /* Largura */
-    margin-bottom: 10px; /* Margem inferior */
-}
+    /* Estilos para o footer */
+    footer {
+        background-color: #fff;
+        color: rgb(0, 0, 0);
+        padding: 1rem 0;
+        text-align: center;
+        width: 100%;
+        bottom: 0;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
 
-/* Estilos para o footer */
-footer {
-    background-color: #fff; /* Cor de fundo */
-    color: rgb(0, 0, 0); /* Cor do texto */
-    padding: 1rem 0; /* Espaçamento interno */
-    text-align: center; /* Centraliza o texto */
-    width: 100%; /* Largura total */
-    bottom: 0; /* Alinha ao fundo */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
-    z-index: 1000; /* Z-index para sobrepor outros elementos */
-}
-
-/* Estilos para o texto dentro do footer */
-footer p {
-    margin: 0; /* Remove as margens padrão */
-    font-size: 14px; /* Tamanho da fonte */
+    /* Estilos para o texto dentro do footer */
+    footer p {
+        margin: 0;
+        font-size: 14px;
+    }
 }
