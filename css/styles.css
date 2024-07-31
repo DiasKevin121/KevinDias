@@ -224,7 +224,7 @@ nav .menu-social li a:hover {
 /* Estilos para a seção Sobre Mim */
 #sobre {
     padding: 2rem;
-    background-color: #0e2b3b;
+    background-color: #012444;
     color: rgb(255, 255, 255);
 }
 
@@ -354,7 +354,7 @@ nav .menu-social li a:hover {
 
     /* Estilos para cada projeto individual */
     .projeto {
-        background-color: #0e2b3b;
+        background-color: #012444;
         color: #fff;
         padding: 20px;
         border-radius: 8px;
@@ -418,7 +418,7 @@ nav .menu-social li a:hover {
         right: 20px;
         width: 50px;
         height: 50px;
-        background-color: #1d5879;
+        background-color: #62b3e2;
         color: white;
         border-radius: 50%;
         display: flex;
@@ -444,7 +444,7 @@ nav .menu-social li a:hover {
 
     /* Estilos para a seção de Habilidades */
     #habilidades {
-        background-color: #0e2b3b;
+        background-color: #012444;
         color: #fff;
         padding: 50px 0;
         text-align: center;
