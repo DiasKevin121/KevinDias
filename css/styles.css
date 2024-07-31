@@ -32,43 +32,72 @@ header {
 
 /* Estilos para o nome do logo */
 .logo h1 {
-    color: #fffb00;
+    color: #00fafa;
     font-family: Georgia;
     font-size: 2.5rem;
     margin: 0;
     margin-left: 3rem;
 }
 
-/* Estilos para a navegação */
+/* Estilos para a barra de navegação */
 nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-right: 3.5rem;
     letter-spacing: 1.5px;
 }
 
-/* Estilos para a lista não ordenada dentro da navegação */
-nav ul {
-    list-style: none;
+/* Estilos para a lista de links principais */
+nav .link {
     display: flex;
+    justify-content: center;
+    flex: 1;
+    list-style: none;
 }
 
-/* Estilos para os itens da lista na navegação */
-nav ul li {
+/* Estilos para os itens da lista de links principais */
+nav .link li {
     margin-left: 1.5rem;
 }
 
 /* Estilos para os links na navegação */
-nav ul li a {
-    color: #fff;
+nav .link li a {
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s;
 }
 
 /* Estilos para hover nos links da navegação */
-nav ul li a:hover {
+nav .link li a:hover {
     color: #acacac;
 }
+
+/* Estilos para a lista de ícones sociais */
+nav .menu-social {
+    list-style: none;
+    display: flex;
+    margin-left: 1.5rem;
+}
+
+/* Estilos para os itens da lista de ícones sociais */
+nav .menu-social li {
+    margin-left: rem;
+}
+
+/* Estilos para os links dos ícones sociais */
+nav .menu-social li a {
+    color: #00fafa;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+/* Estilos para hover nos links dos ícones sociais */
+nav .menu-social li a:hover {
+    color: #0a97ce57;
+}
+
 
 /* Media para responsividade */
 
@@ -286,9 +315,7 @@ nav ul li a:hover {
 
     /* Estilos para os títulos dentro do texto */
     .texto h2 {
-        background: linear-gradient(90deg, #00fff2, #0384fc, #a7e6eb);
-        -webkit-background-clip: text;
-        color: transparent;
+        color: #00fafa;
         font-family: Georgia;
         font-size: 2rem;
         margin-bottom: 2rem;
@@ -425,9 +452,7 @@ nav ul li a:hover {
 
     /* Estilos para o título da seção de Habilidades */
     #habilidades h2 {
-        background: linear-gradient(90deg, #00fff2, #0384fc, #a7e6eb);
-        -webkit-background-clip: text;
-        color: transparent;
+        color: #00fafa;
         font-family: Georgia;
         margin-bottom: 40px;
         font-size: 32px;
