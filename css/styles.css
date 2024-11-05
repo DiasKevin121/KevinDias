@@ -16,9 +16,14 @@ h6 {
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 /* Estilos para o cabeçalho */
 header {
-    background-color: #012444;
+    background: linear-gradient(90deg, #012444, #004080);
     color: #fff;
     padding: 1rem;
 }
@@ -78,12 +83,12 @@ nav .link li a:hover {
 nav .menu-social {
     list-style: none;
     display: flex;
-    margin-left: 1.5rem;
+    margin-left: 1rem;
 }
 
 /* Estilos para os itens da lista de ícones sociais */
 nav .menu-social li {
-    margin-left: rem;
+    margin-left: 1rem;
 }
 
 /* Estilos para os links dos ícones sociais */
@@ -210,8 +215,10 @@ nav .menu-social li a:hover {
 }
 
 /* Estilos para a imagem na seção de Boas-Vindas */
-.imagem-boas-vindas {
-    margin-top: 20px;
+.imagem-boas-vindas img {
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
 }
 
 /* Estilos para a imagem na seção de Boas-Vindas */
@@ -274,25 +281,6 @@ nav .menu-social li a:hover {
 
     .sobre-container .imagem {
         max-width: 200px;
-    }
-}
-
-/* Telas médias (tablets) */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .sobre-container {
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: center;
-        text-align: left;
-    }
-
-    .sobre-container .texto {
-        margin-right: 2rem;
-        max-width: 50%;
-    }
-
-    .sobre-container .imagem {
-        max-width: 250px;
     }
 }
 
@@ -395,9 +383,9 @@ nav .menu-social li a:hover {
 
     /* Estilos para o hover no botão "Ver Projeto" */
     .ver-projetos:hover {
-        transform: scale(1.1);
-        background-color: #0056b3;
-    }
+        background-color: #00fafa;
+        color: #012444;
+    }    
 
     /* Estilos para os links nos projetos */
     .projeto a {
@@ -488,7 +476,11 @@ nav .menu-social li a:hover {
 
     /* Estilos para o texto dentro do footer */
     footer p {
-        margin: 0;
-        font-size: 14px;
+    
+            text-align: center;
+            padding: 10px;
+            background-color: #012444;
+            color: white;
+        
     }
 }
